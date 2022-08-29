@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+{% extends 'market/home.html' %}
+{% load i18n %}
+
+{% block title %}{% trans "Registration" %}{% endblock %}
+
+{% block content %}
+    <h1>{% trans "Registration" %}</h1>
+    <form method="post" enctype="multipart/form-data" class="contact">
+        {% csrf_token %}
+        {{ form.errors }}
+        {{ form.as_p }}
+
+        <button type="submit">{% trans "Save" %}</button>
+    </form>
+{% endblock %}

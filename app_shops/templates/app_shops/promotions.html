@@ -1,0 +1,17 @@
+{% extends 'market/home.html' %}
+{% load i18n %}
+{% load static %}
+{% block title %}{% trans "Promotions" %}{% endblock %}
+
+{% block content %}
+    <h1>{% trans "Promotions" %}</h1>
+        <h5>{% trans "If you have already purchased goods worth more than 3000 rubles, you will receive a 3 percent discount" %}</h5>
+        <h5>{% trans "If you have already purchased goods worth more than 10000 rubles, you will receive a 7 percent discount" %}</h5>
+        <h5>{% trans "The discount will increase with the growth of the total amount of your purchases in our stores" %}</h5>
+    <h3>{% trans "Additional promotions" %}</h3>
+    {% for obj in promotions %}
+        <br>
+        <h4>{{ obj.name }}</h4>
+        <p>{{ obj.description }}</p>
+    {% endfor %}
+{% endblock %}

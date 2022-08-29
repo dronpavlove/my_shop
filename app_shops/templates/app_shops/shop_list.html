@@ -1,0 +1,44 @@
+{% extends 'market/home.html' %}
+{% load i18n %}
+{% load static %}
+
+{% block title %}{% trans "Shops list" %}{% endblock %}
+
+{% block content %}
+    <h1>{% trans "Shop list" %}</h1>
+    {% if shops_list %}
+        {% for shop in shops_list %}
+            <!--
+            <div id="left_sidebar">
+            <p><img src="{{ shop.photo.url }}" width="30%" height="30%">
+                <a href="/shops/{{ shop.id }}">{{ shop.name }}</a></p>
+                <p>{{ shop.city }}</p>
+                <p>{{ shop.data_of_birth }}</p>
+                <p>{{ shop.phone }}</p>
+                <p>{{ shop.email }}</p>
+            </div>
+            -->
+
+            <div class="grid_list">
+				<a href="/shops/{{ shop.id }}">
+					<div class="grid_img">
+						<img src="{{ shop.photo.url }}" class="img-responsive" width="200px" height="200px" alt="{{ shop.photo.url }}"/>
+					</div>
+					<div class="grid_text left">
+						<h3><a href="/shops/{{ shop.id }}">{{ shop.name }}</a></h3>
+						<p>{{ shop.city }}</p>
+                        <p>{{ shop.data_of_birth }}</p>
+                        <p>{{ shop.phone }}</p>
+                        <p>{{ shop.email }}</p>
+					</div>
+                    <div class="create_btn">
+                        <a class="arrow" style="float: right;" href="/shops/{{ shop.id }}/category">{% trans "Products" %}<img src="{% static 'images/right_arrow.png' %}" alt=""/></a>
+                    </div>
+					<div class="clearfix"></div>
+				</a>
+			</div>
+        {% endfor %}
+    {% else %}
+        <p>{% trans "Store list is empty" %}</p>
+    {% endif %}
+{% endblock %}

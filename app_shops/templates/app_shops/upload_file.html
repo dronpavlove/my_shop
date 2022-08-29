@@ -1,0 +1,13 @@
+{% extends 'market/home.html' %}
+{% load i18n %}
+
+{% block title %}{% trans "Updating the product database" %}{% endblock %}
+
+{% block content %}
+    <h3>{% trans "Updating the product database" %}</h3>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">{% trans "Update" %}</button>
+    </form>
+{% endblock %}

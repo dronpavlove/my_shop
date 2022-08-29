@@ -1,0 +1,47 @@
+{% extends 'market/home.html' %}
+{% load i18n %}
+
+{% block title %}{% trans "Purchase history" %}{% endblock %}
+
+{% block content %}
+    <h1>{% trans "Purchase history" %}</h1>
+    <p>{{ account_amount }}</p>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+    <table border="1">
+       <tr>
+           <th>{% trans "product" %}</th>
+           <!--<th>{% trans "shop" %}</th>-->
+           <th>{% trans "price" %}</th>
+           <th>{% trans "amount" %}</th>
+           <th>{% trans "total cost" %}</th>
+           <th>{% trans "status" %}</th>
+           <th>{% trans "pay" %}</th>
+       </tr>
+       {% for obj in product_list %}
+       <tr>
+           <td><div class="grid_img last">
+               <a href="/media/{{ obj.href }}"><img src="/media/{{ obj.href }}" class="img-responsive"  alt="/media/{{ obj.href }}"/></a>
+                </div>
+               <div class="grid_text left">
+                    <h3><a href="/media/{{ obj.href }}">{{ obj.product_name }}</a></h3>
+
+                </div>
+           </td>
+           <!--<th>{{ obj.shop_name }}</th>-->
+           <th>{{ obj.product_price }}</th>
+           <th>{{ obj.amount }}</th>
+           <th>{{ obj.full_count }}</th>
+           <th>{{ obj.status }}</th>
+           <th>{% if obj.pay == 1 %}
+                <input type="checkbox" name="product_pay" value="{{ obj.product_name }},{{ obj.amount }},{{ obj.id }},n">
+               {% endif %}
+           </th>
+       </tr>
+        {% endfor %}
+    </table>
+
+        <button type="submit" style="background: #00405d; color: #FFFFFF;">{% trans "Pay" %}</button>
+    </form>
+    <h2>{% trans "Total amount of paid goods: " %} {{ full_sum }}</h2>
+{% endblock %}

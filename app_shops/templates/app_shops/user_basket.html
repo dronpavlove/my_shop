@@ -1,0 +1,34 @@
+{% extends 'market/home.html' %}
+{% load i18n %}
+
+{% block title %}{% trans "Basket" %}{% endblock %}
+
+{% block content %}
+    <h1>{% trans "Basket" %}</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+    <table>
+       <tr>
+           <th>{% trans "product" %}</th>
+           <th>{% trans "image" %}</th>
+           <th>{% trans "price" %}</th>
+           <th>{% trans "amount" %}</th>
+           <th>{% trans "total cost" %}</th>
+           <th>{% trans "confirm" %}</th>
+       </tr>
+       {% for obj in product_list %}
+       <tr>
+           <th>{{ obj.product.name }}, {{ obj.product.name.article }}</th>
+           <th><img src="{{ obj.product.name.photo.url  }}" width="20%" height="20%" ></th>
+           <th>{{ obj.product.name.price }}</th>
+           <th>{{ obj.amount }}</th>
+           <th>{{ obj.sum }}</th>
+           <th><input type="checkbox" name="product_basket"
+                      value="{{ obj.product.name }}{{ obj.shop_id }}{{ obj.product.name.article }}" checked><!--, , {{ obj.amount }}, {{ obj.sum }}-->
+           </th>
+       </tr>
+        {% endfor %}
+    </table>
+        <button type="submit">{% trans "confirm" %}</button>
+    </form>
+{% endblock %}

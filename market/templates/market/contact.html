@@ -1,0 +1,33 @@
+{% extends 'market/home.html' %}
+{% load i18n %}
+
+{% block title %}{% trans "Contact" %}{% endblock %}
+
+{% block content %}
+
+    <ul class="megamenu skyblue">
+        <li><a class="color10">{% trans 'Contact' %}</a>
+			<div class="megapanel">
+				<div class="row">
+					<div class="col3">
+						<div class="h_nav">
+							<h4>contact us</h4>
+						</div>
+							<form class="contact" method="post" action="/users/contact/">
+								{% csrf_token %}
+								<label for="name">Name</label>
+								<input id="name" type="text" name="name"/>
+								<label for="email">E-mail</label>
+								<input id="email" type="text" name="email"/>
+								<label for="message">Message</label>
+								<textarea rows="8" id="message" name="message"></textarea>
+								<button type="submit" style="background: #483D8B; color: #FFFFFF;">{% trans "send" %}</button>
+							</form>
+					</div>
+						<div class="col3"></div>
+				</div>
+			</div>
+		</li>
+	</ul>
+
+{% endblock %}

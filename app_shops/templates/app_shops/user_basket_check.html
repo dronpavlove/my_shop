@@ -1,0 +1,49 @@
+{% extends 'market/home.html' %}
+{% load i18n %}
+
+{% block title %}{% trans "Your check" %}{% endblock %}
+
+{% block content %}
+    {% if text_pay %}
+        <h1>{{ text_account }}</h1>
+        <h1>{{ text_pay }}</h1>
+    {% else %}
+        <h1>{% trans "Your check for payment" %}</h1>
+        {% if user_address %}
+            <p><a href="/users/another_registration/edit/">{% trans "Correct profile data" %}</a></p>
+            <p>{% trans "balance"  %}: {{ user_profile.purchases_count }}</p>
+            <p>{% trans "city: " %}{{ user_profile.city }}</p>
+            <p>{% trans "postcode: " %}{{ user_profile.postcode }}</p>
+            <p>{% trans "street: " %}{{ user_profile.street }}</p>
+            <p>{% trans "house/apartment: " %}{{ user_profile.house_number }}/{{ user_profile.apartment_number }}</p>
+        {% else %}
+            <p><a href="/users/another_registration/edit/">{% trans "You do not have a completed profile" %}</a></p>
+        {% endif %}
+        <table border="1">
+           <tr>
+               <th>{% trans "product" %}</th>
+               <th>{% trans "image" %}</th>
+               <th>{% trans "price" %}</th>
+               <th>{% trans "amount" %}</th>
+               <th>{% trans "total cost" %}</th>
+           </tr>
+           {% for obj in product_list %}
+           <tr>
+               <th>{{ obj.product.name }}, {{ obj.product.name.article }}</th>
+               <th><img class="marcer" src="{{ obj.product.name.photo.url  }}" width="20%" height="20%" ></th>
+               <th>{{ obj.product.name.price }}</th>
+               <th>{{ obj.amount }}</th>
+               <th>{{ obj.sum }}</th>
+           </tr>
+            {% endfor %}
+        </table>
+        <h1>{% trans "Full sum: " %} {{ full_sum }}</h1>
+        <h1>{{ text }}{{ new_sum }}</h1>
+        <form method="post" action="check" enctype="multipart/form-data">
+            {% csrf_token %}
+            <p><input type="hidden" name="discount" value="{{ discount }}" readonly /></p>
+            <p><input type="hidden" name="new_sum" value="{{ new_sum }}" readonly /></p>
+            <button type="submit">{% trans "pay" %}</button>
+        </form>
+    {% endif %}
+{% endblock %}

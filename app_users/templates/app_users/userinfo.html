@@ -1,0 +1,16 @@
+{% extends 'market/home.html' %}
+{% load i18n %}
+
+{% block title %}{% trans "User rights" %}{% endblock %}
+
+{% block content %}
+
+    <h1>{% trans "User rights" %}</h1>
+        <h4>{% trans "Unregistered users can view all information on the site, but cannot make purchases" %}</h4>
+        <h4>{% trans "Registered users can view all information on the site and can make purchases" %}</h4>
+        <h4>{% trans "If the user has a completely completed profile, he will not have to fill in additional" %}
+            {% trans "fields with the address and contact information when placing orders" %}</h4>
+        <h4>{% trans "If you constantly make purchases in our stores, " %}
+            {% trans "a discount is provided, which depends on the amount of paid goods" %}</h4>
+
+{% endblock %}

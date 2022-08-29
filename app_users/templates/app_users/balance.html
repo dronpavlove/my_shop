@@ -1,0 +1,18 @@
+{% extends 'market/home.html' %}
+{% load i18n %}
+
+{% block title %}{% trans "Balance" %}{% endblock %}
+
+{% block content %}
+    <h1>{% trans "Balance" %}</h1>
+    <p>{{ username }}</p>
+    <p>{{ last_name }} {{ first_name }}</p>
+    <p>{{ phone }}</p>
+    <p>{{ email }}</p>
+    <form class="contact" method="post" action="/users/balance/">
+        {% csrf_token %}
+        <label for="purchases_count">sum</label>
+        <input id="purchases_count" type="number" min="0" max="100000" name="sum"/>
+        <button type="submit" style="background: #483D8B; color: #FFFFFF;">{% trans "replenish the balance" %}</button>
+    </form>
+{% endblock %}

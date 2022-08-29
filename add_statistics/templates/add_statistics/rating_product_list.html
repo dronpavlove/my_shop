@@ -1,0 +1,102 @@
+{% extends 'market/home.html' %}
+{% load i18n %}
+{% load static %}
+
+{% block title %}{% trans "Rating product list" %}{% endblock %}
+
+{% block content %}
+    <ul class="megamenu skyblue">
+        <li>
+            <a class="color10">{% trans 'rating' %}</a>
+                <div class="megapanel">
+                    <div class="row">
+                        <div class="col3">
+                            <div class="h_nav">
+                                <h4>{% trans 'rating' %}</h4>
+                            </div>
+                            <form class="contact" method="post" action="/statistics/rating/">
+                                {% csrf_token %}
+                                <label for="start_date">{% trans 'Start date' %}</label>
+                                <input id="start_date" type="date" name="start_date"/>
+                                <label for="fin_date">{% trans 'Finish date' %}</label>
+                                <input id="fin_date" type="date" name="fin_date"/>
+                                <label for="product_name">{% trans 'Product name' %}</label>
+                                <input type="text" name="product_name" id="product_name">
+                                <input type="hidden" name="sort" value="sort_date" readonly />
+                                <button type="submit" style="background: #483D8B; color: #FFFFFF;">{% trans "apply" %}</button>
+                            </form>
+                        </div>
+                        <div class="col3">
+                        </div>
+                    </div>
+                </div>
+        </li>
+        <li><a class="color10">filter 1</a>
+            <div class="megapanel">
+                <div class="row">
+                    <div class="col3">
+                        <div class="h_nav">
+                            <h4>{% trans 'in developing' %}</h4>
+                        </div>
+                        <form class="contact" method="post" action="/statistics/rating/">
+                            {% csrf_token %}
+                            <input type="hidden" name="sort" value="sort_1" readonly />
+                            <button type="submit" style="background: #483D8B; color: #FFFFFF;">{% trans "apply" %}</button>
+                        </form>
+                    </div>
+                    <div class="col3">
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li><a class="color10">filter 2</a>
+            <div class="megapanel">
+                <div class="row">
+                    <div class="col3">
+                        <div class="h_nav">
+                            <h4>{% trans 'in developing' %}</h4>
+                        </div>
+                        <form class="contact" method="post" action="/statistics/rating/">
+                            {% csrf_token %}
+                            <input type="hidden" name="sort" value="sort_2" readonly />
+                            <button type="submit" style="background: #483D8B; color: #FFFFFF;">{% trans "apply" %}</button>
+                        </form>
+                    </div>
+                    <div class="col3">
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li><a class="color10">filter 3</a>
+            <div class="megapanel">
+                <div class="row">
+                    <div class="col3">
+                        <div class="h_nav">
+                            <h4>{% trans 'in developing' %}</h4>
+                        </div>
+                        <form class="contact" method="post" action="/statistics/rating/">
+                            {% csrf_token %}
+                            <input type="hidden" name="sort" value="sort_3" readonly />
+                            <button type="submit" style="background: #483D8B; color: #FFFFFF;">{% trans "apply" %}</button>
+                        </form>
+                    </div>
+                    <div class="col3">
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <h1>{% trans "Rating product list" %}</h1>
+        {% if product_list %}
+            {% for key, value in product_list.items %}
+            <div class="grid_list">
+                <img src="{{ value.1 }}" class="img-responsive"  width="200px" height="200px" alt="{{ product.photo }}"/>
+                <h3><a>{{ key }}, {% trans 'article' %}: {{ value.2 }}</a></h3>
+                <a><br>{% trans 'Number of paid purchases' %}: {{ value.0 }}</a>
+			</div>
+            {% endfor %}
+        {% else %}
+            <p>{% trans "Product list is empty" %}</p>
+            <p>{{ func }}</p>
+        {% endif %}
+{% endblock %}

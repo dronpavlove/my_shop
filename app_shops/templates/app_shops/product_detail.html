@@ -1,0 +1,30 @@
+{% extends 'market/home.html' %}
+{% load i18n %}
+
+{% block title %}{% trans "product info" %}{% endblock %}
+
+{% block content %}
+    <h1>{{ object.name }}</h1>
+    <div class="grid_list">
+        <img src="{{ object.name.photo.url }}" width="20%" height="20%" >
+            <p>{% trans "Description" %}:  {{ object.name.description }}</p>
+            <p>{% trans "Price" %}:   {{ object.name.price }}</p>
+            <!-- <p><h5 class="marcer">{% trans "Quantity of goods in the store" %}:</h5>   {{ object.amount }}</p> -->
+            <p>{% trans "Quantity of goods in the store" %}:   {{ object.amount }}</p>
+            <form method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                <p><input placeholder="{% trans 'amount' %}" name="amount" value=1
+                          type="number" min="0" max="100"
+                          class="content-box" style="all: unset; -moz-appearance: textfield; width: 3em; text-align: center;"></p>
+                <button type="submit" style="background: #00405d; color: #FFFFFF;">{% trans "In basket" %}</button>
+            </form>
+    </div>
+
+    <!--<h1>{{ error }}</h1><form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <p><input placeholder="{% trans 'amount' %}" name="amount" value=1
+                  class="content-box" style="width: 50px; height: 18px"></p>
+        <button type="submit">{% trans "In basket" %}</button>
+    </form>-->
+
+{% endblock %}

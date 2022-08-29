@@ -1,0 +1,46 @@
+{% extends 'market/home.html' %}
+{% load i18n %}
+{% load static %}
+
+{% block title %}{% trans "Product list" %}{% endblock %}
+
+{% block content %}
+    <h1>{% trans "Product list" %}</h1>
+    {% if product_list %}
+            {% for product in product_list %}
+            <!--<div id="left_sidebar">
+                <p><img class="right" src="{{ product.name.photo.url }}" width="30%" height="30%">
+                <a href="{{ product.name.category_id }}/product/{{ product.name.id }}">{{ product.name }}</a></p>
+                <p>{{ product.name.price }}</p>
+
+            </div>-->
+            <div class="grid_list">
+				<a href="{{ product.name.category_id }}/product/{{ product.name.id }}">
+					<div class="grid_img">
+						<img src="{{ product.name.photo.url }}" class="img-responsive" width="200px" height="200px" alt="{{ shop.photo.url }}"/>
+					</div>
+					<div class="grid_text left">
+						<h3><a href="{{ product.name.category_id }}/product/{{ product.name.id }}">{{ product.name }}</a></h3>
+						<a>Количество в магазине: {{ product.amount }}</a>
+                        <a><br>{% trans 'price' %}: {{ product.name.price }}</a>
+                        <a><br>{{ product.name.description }}</a>
+					</div>
+                    <div class="create_btn">
+                        <a class="arrow" style="float: right;" href="{{ product.name.category_id }}/product/{{ product.name.id }}/{{ product.article }}">{% trans "Detail" %}<img src="{% static 'images/right_arrow.png' %}" alt=""/></a>
+                    </div>
+                        <form method="post" action="{{ product.name.category_id }}/product/{{ product.name.id }}/{{ product.article }}" enctype="multipart/form-data">
+                            {% csrf_token %}
+                            <p><input placeholder="{% trans 'amount' %}" name="amount" value=1
+                                      type="number" min="0" max="100"
+                                      class="content-box" style="all: unset; -moz-appearance: textfield; width: 3em; text-align: center;"></p>
+                            <!--<p><input type="hidden" name="article" value="{{ product.article }}" readonly /></p>-->
+                            <button type="submit" style="background: #00405d; color: #FFFFFF;">{% trans "In basket" %}</button>
+                        </form>
+					<div class="clearfix"></div>
+				</a>
+			</div>
+            {% endfor %}
+    {% else %}
+        <p>{% trans "Store list is empty" %}</p>
+    {% endif %}
+{% endblock %}

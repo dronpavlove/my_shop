@@ -1,0 +1,21 @@
+{% extends 'market/home.html' %}
+{% load i18n %}
+{% load static %}
+
+{% block title %}{% trans "Shop info" %}{% endblock %}
+
+{% block content %}
+    <h1>{{ object.name }}</h1>
+            <img src="{{ photo }}" width="40%" height="40%" style="float: right;">
+            <div class="create_btn">
+                <a class="arrow" style="float: right;" href="{{ href_category }}">{% trans "Products" %}<img src="{% static 'images/right_arrow.png' %}" alt=""/></a>
+            </div>
+            <p><strong><em>{% trans "Description" %}:</em></strong> {{ object.description }}</p>
+            <p><strong><em>{% trans "City" %}:</em></strong>   {{ object.city }}</p>
+            <p><strong><em>{% trans "Street" %}:</em></strong>   {{ object.street }}</p>
+            <p><strong><em>{% trans "House number" %}:</em></strong>   {{ object.house_number }}</p>
+            <p><strong><em>{% trans "Date of formation" %}:</em></strong>   {{ object.data_of_birth }}</p>
+            <p><strong><em>{% trans "Phone" %}:</em></strong>   {{ object.phone }}</p>
+            <p><strong><em>email:</em></strong>   {{ object.email }}</p>
+            <p><a href="{{ href_category }}">{% trans "Products" %}</a></p>
+{% endblock %}

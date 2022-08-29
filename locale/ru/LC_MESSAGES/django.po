@@ -1,0 +1,814 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-02-15 21:41+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
+"10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%"
+"100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: .\add_statistics\templates\add_statistics\rating_form.html:5
+#: .\add_statistics\templates\add_statistics\rating_product_list.html:5
+#: .\add_statistics\templates\add_statistics\rating_product_list.html:85
+msgid "Rating product list"
+msgstr "Рейтинг товаров"
+
+#: .\add_statistics\templates\add_statistics\rating_form.html:11
+#: .\add_statistics\templates\add_statistics\rating_form.html:16
+#: .\add_statistics\templates\add_statistics\rating_product_list.html:10
+#: .\add_statistics\templates\add_statistics\rating_product_list.html:15
+
+msgid "rating"
+msgstr "рейтинг"
+
+#: .\add_statistics\templates\add_statistics\rating_form.html:26
+#: .\market\templates\market\home.html:286
+msgid "send"
+msgstr "отправить"
+
+#: .\add_statistics\templates\add_statistics\rating_product_list.html:19
+msgid "Start date"
+msgstr "Начальная дата"
+
+#: .\add_statistics\templates\add_statistics\rating_product_list.html:21
+msgid "Finish date"
+msgstr "Конечная дата"
+
+#: .\add_statistics\templates\add_statistics\rating_product_list.html:23
+msgid "Product name"
+msgstr "Название товара"
+
+#: .\add_statistics\templates\add_statistics\rating_product_list.html:25
+#: .\add_statistics\templates\add_statistics\rating_product_list.html:42
+#: .\add_statistics\templates\add_statistics\rating_product_list.html:59
+#: .\add_statistics\templates\add_statistics\rating_product_list.html:76
+msgid "apply"
+msgstr "применить"
+
+#: .\add_statistics\templates\add_statistics\rating_product_list.html:38
+#: .\add_statistics\templates\add_statistics\rating_product_list.html:55
+#: .\add_statistics\templates\add_statistics\rating_product_list.html:72
+msgid "in developing"
+msgstr "в разработке"
+
+#: .\add_statistics\templates\add_statistics\rating_product_list.html:91
+msgid "Number of paid purchases"
+msgstr "Количество оплаченных покупок"
+
+#: .\add_statistics\templates\add_statistics\rating_product_list.html:95
+msgid "Product list is empty"
+msgstr "Спиок товаров пуст"
+
+#: .\app_shops\admin.py:14 .\app_shops\models.py:23
+msgid "shop profile"
+msgstr "профиль магазина"
+
+#: .\app_shops\admin.py:24 .\app_shops\models.py:74
+msgid "product profile"
+msgstr "профиль продукта"
+
+#: .\app_shops\admin.py:32 .\app_shops\models.py:36
+msgid "category"
+msgstr "категории"
+
+#: .\app_shops\admin.py:51 .\app_shops\models.py:11 .\app_shops\models.py:67
+#: .\app_shops\models.py:87 .\app_shops\models.py:88 .\app_shops\models.py:115
+#: .\app_users\forms.py:20 .\app_users\models.py:46
+msgid "name"
+msgstr "имя"
+
+#: .\app_shops\admin.py:60 .\app_shops\models.py:92
+msgid "product in the store"
+msgstr "продукт в магазине"
+
+#: .\app_shops\admin.py:69
+msgid "Users Garbage"
+msgstr "Временная корзина пользователя"
+
+#: .\app_shops\admin.py:96
+msgid "transfer to status \"item paid\""
+msgstr "перевести в статус \"товар оплачен\""
+
+#: .\app_shops\admin.py:97
+msgid "transfer to status \"item not paid\""
+msgstr "перевести в статус \"товар не оплачен\""
+
+#: .\app_shops\admin.py:98
+msgid "return to store"
+msgstr "вернуть в магазине"
+
+#: .\app_shops\admin.py:101
+msgid "Users Basket"
+msgstr "Корзина пользователя"
+
+#: .\app_shops\apps.py:7
+msgid "shops and products"
+msgstr "магазины и товары"
+
+#: .\app_shops\forms.py:9
+msgid "file"
+msgstr "файл"
+
+#: .\app_shops\models.py:12 .\app_shops\models.py:50 .\app_shops\models.py:68
+msgid "description"
+msgstr "описание"
+
+#: .\app_shops\models.py:13 .\app_users\forms.py:22 .\app_users\models.py:18
+msgid "city"
+msgstr "город"
+
+#: .\app_shops\models.py:14 .\app_users\forms.py:23 .\app_users\models.py:19
+msgid "street"
+msgstr "улица"
+
+#: .\app_shops\models.py:15
+msgid "house number"
+msgstr "номер дома"
+
+#: .\app_shops\models.py:16
+msgid "date of formation"
+msgstr "дата образования"
+
+#: .\app_shops\models.py:17 .\app_users\forms.py:29 .\app_users\models.py:24
+msgid "phone"
+msgstr "Телефон"
+
+#: .\app_shops\models.py:19
+msgid "number of purchases"
+msgstr "число совершённых покупок"
+
+#: .\app_shops\models.py:24
+msgid "shops profile"
+msgstr "профили магазинов"
+
+#: .\app_shops\models.py:32
+msgid "category name"
+msgstr "название категории"
+
+#: .\app_shops\models.py:33 .\app_shops\models.py:70 .\app_users\forms.py:30
+msgid "photo"
+msgstr "фото"
+
+#: .\app_shops\models.py:37
+msgid "categories"
+msgstr "категории"
+
+#: .\app_shops\models.py:46
+msgid "current"
+msgstr "действующая"
+
+#: .\app_shops\models.py:47
+msgid "inactive"
+msgstr "недействующая"
+
+#: .\app_shops\models.py:49
+msgid "promotion name"
+msgstr "название акции"
+
+#: .\app_shops\models.py:51 .\app_shops\models.py:137 .\app_users\models.py:28
+#: .\app_users\models.py:49
+#: .\app_users\templates\app_users\purchase_history.html:17
+msgid "status"
+msgstr "статус"
+
+#: .\app_shops\models.py:54
+msgid "promotion"
+msgstr "акция"
+
+#: .\app_shops\models.py:55
+msgid "promotions"
+msgstr "акции"
+
+#: .\app_shops\models.py:65
+msgid "article"
+msgstr "артикул"
+
+#: .\app_shops\models.py:69
+#: .\app_shops\templates\app_shops\full_product_list.html:19
+#: .\app_shops\templates\app_shops\product_list.html:25
+#: .\app_shops\templates\app_shops\user_basket.html:14
+#: .\app_shops\templates\app_shops\user_basket_check.html:25
+#: .\app_users\templates\app_users\purchase_history.html:14
+msgid "price"
+msgstr "цена"
+
+#: .\app_shops\models.py:71 .\app_shops\models.py:89 .\app_shops\models.py:119
+#: .\app_shops\models.py:136
+#: .\app_shops\templates\app_shops\product_detail.html:16
+#: .\app_shops\templates\app_shops\product_detail.html:25
+#: .\app_shops\templates\app_shops\product_list.html:33
+#: .\app_shops\templates\app_shops\user_basket.html:15
+#: .\app_shops\templates\app_shops\user_basket_check.html:26
+#: .\app_users\templates\app_users\purchase_history.html:15
+msgid "amount"
+msgstr "количество"
+
+#: .\app_shops\models.py:75
+msgid "products profile"
+msgstr "Профиль товара"
+
+#: .\app_shops\models.py:93
+msgid "products in the store"
+msgstr "товар в магазине"
+
+#: .\app_shops\models.py:116
+#: .\app_shops\templates\app_shops\user_basket.html:12
+#: .\app_shops\templates\app_shops\user_basket_check.html:23
+#: .\app_users\templates\app_users\purchase_history.html:12
+msgid "product"
+msgstr "товар"
+
+#: .\app_shops\models.py:118
+#: .\app_users\templates\app_users\purchase_history.html:13
+msgid "shop"
+msgstr "магазин"
+
+#: .\app_shops\models.py:120
+msgid "sum"
+msgstr "сумма"
+
+#: .\app_shops\models.py:130
+msgid "item paid"
+msgstr "товар оплачен"
+
+#: .\app_shops\models.py:131
+msgid "item not paid"
+msgstr "товар неоплачен"
+
+#: .\app_shops\models.py:133
+msgid "profile"
+msgstr "профиль"
+
+#: .\app_shops\models.py:134
+msgid "product_name"
+msgstr "название товара"
+
+#: .\app_shops\models.py:135
+msgid "product_price"
+msgstr "цена товара"
+
+#: .\app_shops\models.py:138
+msgid "shop_id"
+msgstr "id_магазина"
+
+#: .\app_shops\models.py:142
+msgid "product in user basket"
+msgstr "товар в корзине пользователя"
+
+#: .\app_shops\models.py:143
+msgid "products in user basket"
+msgstr "товары в корзине пользователя"
+
+#: .\app_shops\templates\app_shops\category_detail.html:4
+msgid "category info"
+msgstr "информация о категориях"
+
+#: .\app_shops\templates\app_shops\full_product_list.html:5
+#: .\app_shops\templates\app_shops\full_product_list.html:8
+#: .\app_shops\templates\app_shops\product_list.html:5
+#: .\app_shops\templates\app_shops\product_list.html:8
+msgid "Product list"
+msgstr "Список товаров"
+
+#: .\app_shops\templates\app_shops\full_product_list.html:18
+msgid "quantity of goods"
+msgstr "Количество товара"
+
+#: .\app_shops\templates\app_shops\full_product_list.html:23
+msgid "Name of shop"
+msgstr "Название магазина"
+
+#: .\app_shops\templates\app_shops\full_product_list.html:23
+msgid "Quantity in this store"
+msgstr "Количество товара в этом магазине"
+
+#: .\app_shops\templates\app_shops\full_product_list.html:32
+#: .\app_shops\templates\app_shops\product_list.html:43
+#: .\app_shops\templates\app_shops\shop_list.html:42
+msgid "Store list is empty"
+msgstr "Спиок магазинов пуст"
+
+#: .\app_shops\templates\app_shops\product_detail.html:4
+msgid "product info"
+msgstr "информация о товаре"
+
+#: .\app_shops\templates\app_shops\product_detail.html:10
+#: .\app_shops\templates\app_shops\shop_detail.html:13
+msgid "Description"
+msgstr "Описание"
+
+#: .\app_shops\templates\app_shops\product_detail.html:11
+msgid "Price"
+msgstr "Цена"
+
+#: .\app_shops\templates\app_shops\product_detail.html:12
+#: .\app_shops\templates\app_shops\product_detail.html:13
+msgid "Quantity of goods in the store"
+msgstr "Количество товара в магазине"
+
+#: .\app_shops\templates\app_shops\product_detail.html:19
+#: .\app_shops\templates\app_shops\product_detail.html:27
+#: .\app_shops\templates\app_shops\product_list.html:36
+msgid "In basket"
+msgstr "В корзину"
+
+#: .\app_shops\templates\app_shops\product_list.html:29
+msgid "Detail"
+msgstr "Подробно"
+
+#: .\app_shops\templates\app_shops\promotions.html:4
+#: .\app_shops\templates\app_shops\promotions.html:7
+#: .\market\templates\market\home.html:363
+msgid "Promotions"
+msgstr "Акции"
+
+#: .\app_shops\templates\app_shops\promotions.html:8
+msgid ""
+"If you have already purchased goods worth more than 3000 rubles, you will "
+"receive a 3 percent discount"
+msgstr ""
+"Если Вы уже приобрели товары на сумму больше 3000 рублей, Вам "
+"предоставляется скидка 3 процента"
+
+#: .\app_shops\templates\app_shops\promotions.html:9
+msgid ""
+"If you have already purchased goods worth more than 10000 rubles, you will "
+"receive a 7 percent discount"
+msgstr ""
+"Если Вы уже приобрели товары на сумму больше 10000 рублей, Вам "
+"предоставляется скидка 7 процента"
+
+#: .\app_shops\templates\app_shops\promotions.html:10
+msgid ""
+"The discount will increase with the growth of the total amount of your "
+"purchases in our stores"
+msgstr ""
+"Скидка будет увеличиваться с ростом общей суммы Ваших покупок в наших "
+"магазинах"
+
+#: .\app_shops\templates\app_shops\promotions.html:11
+msgid "Additional promotions"
+msgstr "Дополнительные акции"
+
+#: .\app_shops\templates\app_shops\shop_detail.html:5
+msgid "Shop info"
+msgstr "Информация о магазине"
+
+#: .\app_shops\templates\app_shops\shop_detail.html:11
+#: .\app_shops\templates\app_shops\shop_detail.html:20
+#: .\app_shops\templates\app_shops\shop_list.html:35
+#: .\market\templates\market\home.html:339
+msgid "Products"
+msgstr "Товары"
+
+#: .\app_shops\templates\app_shops\shop_detail.html:14
+msgid "City"
+msgstr "Город"
+
+#: .\app_shops\templates\app_shops\shop_detail.html:15
+msgid "Street"
+msgstr "Улица"
+
+#: .\app_shops\templates\app_shops\shop_detail.html:16
+msgid "House number"
+msgstr "Номер дома"
+
+#: .\app_shops\templates\app_shops\shop_detail.html:17
+msgid "Date of formation"
+msgstr "Дата образования"
+
+#: .\app_shops\templates\app_shops\shop_detail.html:18
+msgid "Phone"
+msgstr "Телефон"
+
+#: .\app_shops\templates\app_shops\shop_list.html:5
+msgid "Shops list"
+msgstr "Список магазинов"
+
+#: .\app_shops\templates\app_shops\shop_list.html:8
+msgid "Shop list"
+msgstr "Список магазинов"
+
+#: .\app_shops\templates\app_shops\upload_file.html:4
+#: .\app_shops\templates\app_shops\upload_file.html:7
+msgid "Updating the product database"
+msgstr "Обновление базы продуктов"
+
+#: .\app_shops\templates\app_shops\upload_file.html:11
+msgid "Update"
+msgstr "Обновить"
+
+#: .\app_shops\templates\app_shops\user_basket.html:4
+#: .\app_shops\templates\app_shops\user_basket.html:7
+msgid "Basket"
+msgstr "Корзина"
+
+#: .\app_shops\templates\app_shops\user_basket.html:13
+#: .\app_shops\templates\app_shops\user_basket_check.html:24
+msgid "image"
+msgstr "изображение"
+
+#: .\app_shops\templates\app_shops\user_basket.html:16
+#: .\app_shops\templates\app_shops\user_basket_check.html:27
+#: .\app_users\templates\app_users\purchase_history.html:16
+msgid "total cost"
+msgstr "общая стоимость"
+
+#: .\app_shops\templates\app_shops\user_basket.html:17
+#: .\app_shops\templates\app_shops\user_basket.html:32
+msgid "confirm"
+msgstr "подтвердить"
+
+#: .\app_shops\templates\app_shops\user_basket_check.html:4
+msgid "Your check"
+msgstr "Ваш чек"
+
+#: .\app_shops\templates\app_shops\user_basket_check.html:11
+msgid "Your check for payment"
+msgstr "Ваш чек для оплаты"
+
+#: .\app_shops\templates\app_shops\user_basket_check.html:13
+msgid "Correct profile data"
+msgstr "Исправить данные профиля"
+
+#: .\app_shops\templates\app_shops\user_basket_check.html:14
+msgid "city: "
+msgstr "город: "
+
+#: .\app_shops\templates\app_shops\user_basket_check.html:15
+msgid "postcode: "
+msgstr "индекс: "
+
+#: .\app_shops\templates\app_shops\user_basket_check.html:16
+msgid "street: "
+msgstr "улица: "
+
+#: .\app_shops\templates\app_shops\user_basket_check.html:17
+msgid "house/apartment: "
+msgstr "номер дома/номер квартиры: "
+
+#: .\app_shops\templates\app_shops\user_basket_check.html:19
+msgid "You do not have a completed profile"
+msgstr "У вас нет заполненного профиля"
+
+#: .\app_shops\templates\app_shops\user_basket_check.html:39
+#: .\market\templates\market\home.html:129
+#: .\market\templates\market\home.html:400
+msgid "Full sum: "
+msgstr "Общая сумма: "
+
+#: .\app_shops\templates\app_shops\user_basket_check.html:45
+#: .\app_users\templates\app_users\purchase_history.html:18
+msgid "pay"
+msgstr "оплатить"
+
+#: .\app_shops\views.py:57
+msgid "The order has been made. You will be contacted shortly."
+msgstr "Заказ сделан. В ближайшее время с Вами свяжутся."
+
+#: .\app_shops\views.py:62
+msgid "Insufficient funds on the account."
+msgstr "Недостаточно средств на счёте"
+
+#: .\app_shops\views.py:65
+msgid "Funds debited from account."
+msgstr "Средства списаны со счёта"
+
+#: .\app_shops\views.py:78 .\app_users\models.py:25 .\app_users\views.py:112
+#: .\market\views.py:49
+msgid "account amount"
+msgstr "сумма на счёте"
+
+#: .\app_shops\views.py:189
+msgid "The amount does not allow you to make a discount"
+msgstr "Сумма не позволяет сделать скидку"
+
+#: .\app_shops\views.py:194
+msgid "You get a 0,03 discount, to pay: "
+msgstr "Вам предоставлена 3 процента скидка, к оплате: "
+
+#: .\app_shops\views.py:199
+msgid "You get a 0,07 discount, to pay: "
+msgstr "Вам предоставлена 7 процентов скидка, к оплате: "
+
+#: .\app_shops\views.py:204
+msgid "You get a 0,1 discount, to pay: "
+msgstr "Вам предоставлена 10 процентов скидка, к оплате: "
+
+#: .\app_shops\views.py:241
+msgid "Order quantity exceeds store stock"
+msgstr "Количество заказа превышает запас магазина"
+
+#: .\app_users\admin.py:12 .\app_users\models.py:31
+msgid "user profile"
+msgstr "Профиль пользователя"
+
+#: .\app_users\admin.py:32 .\app_users\models.py:52
+msgid "user message"
+msgstr "сообщение пользователя"
+
+#: .\app_users\apps.py:7
+msgid "users"
+msgstr "Пользователи"
+
+#: .\app_users\forms.py:21
+msgid "last name"
+msgstr "фамилие"
+
+#: .\app_users\forms.py:24 .\app_users\models.py:20
+msgid "postcode"
+msgstr "индекс"
+
+#: .\app_users\forms.py:25 .\app_users\models.py:21
+msgid "house_number"
+msgstr "номер дома"
+
+#: .\app_users\forms.py:26 .\app_users\models.py:22
+msgid "apartment_number"
+msgstr "номер квартиры"
+
+#: .\app_users\forms.py:27 .\app_users\models.py:23
+msgid "data of birth"
+msgstr "дата рождения"
+
+#: .\app_users\models.py:12 .\market\views.py:42
+msgid "beginner"
+msgstr ""
+
+#: .\app_users\models.py:13 .\market\views.py:44
+msgid "started"
+msgstr "улица"
+
+#: .\app_users\models.py:14 .\market\views.py:46
+msgid "regular"
+msgstr ""
+
+#: .\app_users\models.py:15 .\market\views.py:48
+msgid "constant"
+msgstr "постоянный"
+
+#: .\app_users\models.py:17
+msgid "user"
+msgstr "пользователь"
+
+#: .\app_users\models.py:27
+msgid "spent"
+msgstr "потрачено"
+
+#: .\app_users\models.py:32
+msgid "users profile"
+msgstr "профили пользователей"
+
+#: .\app_users\models.py:43
+msgid "answered"
+msgstr "отвечено"
+
+#: .\app_users\models.py:44
+msgid "unanswered"
+msgstr "неотвечено"
+
+#: .\app_users\models.py:48
+msgid "message"
+msgstr "сообщение"
+
+#: .\app_users\models.py:53
+msgid "users message"
+msgstr "Временная корзина пользователя"
+
+#: .\app_users\templates\app_users\balance.html:4
+#: .\app_users\templates\app_users\balance.html:7
+msgid "Balance"
+msgstr "Баланс"
+
+#: .\app_users\templates\app_users\balance.html:16
+#: .\market\templates\market\home.html:305
+msgid "replenish the balance"
+msgstr "пополнить баланс"
+
+#: .\app_users\templates\app_users\purchase_history.html:4
+#: .\app_users\templates\app_users\purchase_history.html:7
+#: .\market\templates\market\home.html:378
+msgid "Purchase history"
+msgstr "История покупок"
+
+#: .\app_users\templates\app_users\purchase_history.html:43
+msgid "Pay"
+msgstr "Оплатить"
+
+#: .\app_users\templates\app_users\purchase_history.html:45
+msgid "Total amount of paid goods: "
+msgstr "Общая сумма оплаченного товара:"
+
+#: .\app_users\templates\app_users\userinfo.html:4
+#: .\app_users\templates\app_users\userinfo.html:8
+msgid "User rights"
+msgstr "Права пользователей"
+
+#: .\app_users\templates\app_users\userinfo.html:9
+msgid ""
+"Unregistered users can view all information on the site, but cannot make "
+"purchases"
+msgstr ""
+"Незарегистрированные пользователи могут просматривать всю информацию на "
+"сайте, но не могут совершатьпокупки"
+
+#: .\app_users\templates\app_users\userinfo.html:10
+msgid ""
+"Registered users can view all information on the site and can make purchases"
+msgstr ""
+"Зарегистрированные пользователи могут просматривать всю информацию на сайте "
+"и могут совершать покупки"
+
+#: .\app_users\templates\app_users\userinfo.html:11
+msgid ""
+"If the user has a completely completed profile, he will not have to fill in "
+"additional"
+msgstr ""
+"Если у пользователя полностью заполненный профиль, ему не придется заполнять "
+"дополнительные"
+
+#: .\app_users\templates\app_users\userinfo.html:12
+msgid "fields with the address and contact information when placing orders"
+msgstr " поля с адресом и контактной информацией при оформлении заказов"
+
+#: .\app_users\templates\app_users\userinfo.html:13
+msgid "If you constantly make purchases in our stores, "
+msgstr "Если вы постоянно совершаете покупки в наших магазинах,"
+
+#: .\app_users\templates\app_users\userinfo.html:14
+msgid "a discount is provided, which depends on the amount of paid goods"
+msgstr "предоставляется скидка, которая зависит от суммы оплаченного товара"
+
+#: .\app_users\templates\registration\login.html:4
+#: .\app_users\templates\registration\login.html:7
+msgid "Authorization"
+msgstr "Авторизироваться"
+
+#: .\app_users\templates\registration\login.html:11
+#: .\market\templates\market\home.html:71
+#: .\market\templates\market\home.html:84
+#: .\market\views.py:62
+msgid "Login"
+msgstr "Войти"
+
+#: .\app_users\templates\registration\registration.html:5
+#: .\app_users\templates\registration\registration.html:8
+msgid "Registration"
+msgstr "Регистрация"
+
+#: .\app_users\templates\registration\registration.html:14
+msgid "Save"
+msgstr "Сохранить"
+
+#: .\app_users\views.py:51 .\app_users\views.py:95
+msgid "paid"
+msgstr "товар оплачен"
+
+#: .\app_users\views.py:54 .\app_users\views.py:98
+msgid "waiting for payment"
+msgstr "ожидает оплаты"
+
+#: .\app_users\views.py:59
+msgid "unknown"
+msgstr "неизвестный"
+
+#: .\market\templates\market\home.html:41
+msgid "our promotions"
+msgstr "наши акции"
+
+#: .\market\templates\market\home.html:44
+msgid "product rating"
+msgstr "рейтинг товаров"
+
+#: .\market\templates\market\home.html:48
+msgid "Purchase History"
+msgstr "История покупок"
+
+#: .\market\templates\market\home.html:49
+#: .\market\templates\market\home.html:271
+msgid "Contact"
+msgstr "Контакты"
+
+#: .\market\templates\market\home.html:86
+msgid "Forgot your password?"
+msgstr "Забыли Ваш пароль?"
+
+#: .\market\templates\market\home.html:111
+msgid "Personal Area"
+msgstr "Личный кабинет"
+
+#: .\market\templates\market\home.html:118
+msgid "top up your account"
+msgstr "пополнить свой счет"
+
+#: .\market\templates\market\home.html:120
+msgid "login to your account"
+msgstr "Войдите в свой аккаунт"
+
+#: .\market\templates\market\home.html:128
+#: .\market\templates\market\home.html:399
+msgid "Product count: "
+msgstr "Количество продуктов: "
+
+#: .\market\templates\market\home.html:144
+msgid "Home"
+msgstr "Домой"
+
+#: .\market\templates\market\home.html:270
+msgid "User rights information"
+msgstr "Информация о правах пользователей"
+
+#: .\market\templates\market\home.html:308
+msgid "Your buyer status"
+msgstr "Ваш статус покупателя"
+
+#: .\market\templates\market\home.html:340
+msgid "see products"
+msgstr "смотреть товары"
+
+#: .\market\templates\market\home.html:354
+msgid "Our shops"
+msgstr "Наши магазины"
+
+#: .\market\templates\market\home.html:355
+msgid "store selection"
+msgstr "выбор магазина"
+
+#: .\market\templates\market\home.html:364
+msgid "see promotions"
+msgstr "смотреть акции"
+
+#: .\market\templates\market\home.html:379
+msgid "view purchase history"
+msgstr "просмотреть историю покупок"
+
+#: .\market\templates\market\home.html:389
+#: .\market\templates\market\home.html:390
+msgid "Items in your cart"
+msgstr "Товары в вашей корзине"
+
+#: .\market\templates\market\home.html:406
+msgid "back"
+msgstr "назад"
+
+#: .\market\views.py:36 .\market\views.py:38
+msgid "Welcome to the site, "
+msgstr "Добро пожаловать на сайт, "
+
+#: .\market\views.py:50
+msgid "Your city: "
+msgstr "Ваш город: "
+
+#: .\market\views.py:54
+msgid "Your city is unknown, profile is not completed"
+msgstr "Ваш город неизвестен, не заполнен профиль"
+
+#: .\market\views.py:56
+msgid "Log off"
+msgstr "Выйти"
+
+#: .\market\views.py:58
+msgid "Edit profile"
+msgstr "Редактировать профиль"
+
+#: .\market\views.py:60
+msgid "You are not authorized on our website"
+msgstr "Вы не авторизированы на нашем сайте"
+
+#: .\market\views.py:64
+msgid "Simple registration"
+msgstr "Простая регистрация"
+
+#: .\market\views.py:66
+msgid "Detailed registration"
+msgstr "Подробная регистрация"
+
+#~ msgid "Loyalty"
+#~ msgstr "Программа"
+
+#~ msgid "program"
+#~ msgstr "лояльности"
+
+#~ msgid "Choose:"
+#~ msgstr "Меню:"
+
+#~ msgid "Phone: "
+#~ msgstr "Телефон: "
+
+#~ msgid "Fax: "
+#~ msgstr "Факс: "
+
+#~ msgid "Stock"
+#~ msgstr "Акции"

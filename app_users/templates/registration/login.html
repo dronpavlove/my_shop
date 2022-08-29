@@ -1,0 +1,13 @@
+{% extends 'market/home.html' %}
+{% load i18n %}
+
+{% block title %}{% trans "Authorization" %}{% endblock %}
+
+{% block content %}
+    <h1>{% trans "Authorization" %}</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">{% trans "Login" %}</button>
+    </form>
+{% endblock %}
